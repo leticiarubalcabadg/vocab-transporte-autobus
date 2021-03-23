@@ -211,7 +211,7 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 [comment]: <!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!> 
 
 &nbsp;
-### AUTOBUS_POINTONROUTE <a name="id10"></a>
+### AUTOBUS_POINTONROUTE <a name="id11"></a>
 &nbsp;
 
 |     Campo                      |     Tipo           |     Ejemplo        |     Descripción                                                                                                                                                                 |     URL                                                         |
@@ -227,7 +227,7 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 [comment]: <!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!> 
 
 &nbsp;
-### AUTOBUS_JOURNEYPATTERN <a name="id11"></a>
+### AUTOBUS_JOURNEYPATTERN <a name="id12"></a>
 &nbsp;
 
 |     Campo                      |     Tipo            |     Ejemplo                                 |     Descripción                                                                                                  |     URL                                                                              |
@@ -245,7 +245,7 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 [comment]: <!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!> 
 
 &nbsp;
-### AUTOBUS_STOPPOINTINJOURNEYPATTERN <a name="id12"></a>
+### AUTOBUS_STOPPOINTINJOURNEYPATTERN <a name="id13"></a>
 &nbsp;
 
 |     Campo                      |     Tipo            |     Ejemplo         |     Descripción                                                                                                                                      |     URL                                                         |
@@ -262,7 +262,7 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 
 
 &nbsp;
-### AUTOBUS_PARADA <a name="id13"></a>
+### AUTOBUS_PARADA <a name="id14"></a>
 &nbsp;
 
 |     Campo                |     Tipo             |     Ejemplo                           |     Descripción                                                                                                                         |     URL                                                                                                         |
@@ -287,7 +287,7 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 
 
 &nbsp;
-### AUTOBUS_VEHICLEJOURNEY <a name="id14"></a>
+### AUTOBUS_VEHICLEJOURNEY <a name="id15"></a>
 &nbsp;
 
 |     Campo               |     Tipo           |     Ejemplo            |     Descripción                                                                                                                                  |     URL                                                    |
@@ -304,7 +304,7 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 
 
 &nbsp;
-### AUTOBUS_REALTIMEPASSINGTIME <a name="id15"></a>
+### AUTOBUS_REALTIMEPASSINGTIME <a name="id16"></a>
 &nbsp;
 
 |     Campo                      |     Tipo           |     Ejemplo                |     Descripción                                                                                             |     URL                                                                            |
@@ -318,7 +318,7 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 
 
 &nbsp;
-### AUTOBUS_HEADWAYJOURNEYGROUP <a name="id16"></a>
+### AUTOBUS_HEADWAYJOURNEYGROUP <a name="id17"></a>
 &nbsp;
 
 |     Campo                   |     Tipo           |     Ejemplo            |     Descripción                                                                            |     URL                                                       |
@@ -333,7 +333,7 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 
 
 &nbsp;
-### AUTOBUS_HEADWAYINTERVAL <a name="id17"></a>
+### AUTOBUS_HEADWAYINTERVAL <a name="id18"></a>
 &nbsp;
 
 |     Campo                         |     Tipo            |     Ejemplo             |     Descripción                                             |     URL                                                             |
@@ -349,7 +349,7 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 
 
 &nbsp;
-### AUTOBUS_SERVICECALENDAR <a name="id18"></a>
+### AUTOBUS_SERVICECALENDAR <a name="id19"></a>
 &nbsp;
 
 |     Campo          |     Tipo             |     Ejemplo                                                |     Descripción                                                                   |     URL                                             |
@@ -368,7 +368,7 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 
 
 &nbsp;
-### AUTOBUS_DAYTYPEASSIGNMENT <a name="id19"></a>
+### AUTOBUS_DAYTYPEASSIGNMENT <a name="id20"></a>
 &nbsp;
 
 
@@ -385,7 +385,7 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 
 
 &nbsp;
-### AUTOBUS_DAYTYPE <a name="id20"></a>
+### AUTOBUS_DAYTYPE <a name="id21"></a>
 &nbsp;
 
 
