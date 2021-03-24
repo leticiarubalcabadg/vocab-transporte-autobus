@@ -122,7 +122,7 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 |-----------------------|---------------------|-------------------------------------------------------------------|-----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 |ikey|VARCHAR(50)|BUSOPE01|Identificador de la   Tabla (PK).|                                 |
 |id|     VARCHAR(50)     |     EMT                                                           |                                                                                         |     http://purl.org/dc/terms/identifier                                                                         |
-|serving_pt_for|VARCHAR(50)|CRTM|Esta propiedad indica para qué   Autoridad está trabajando la entidad operadora.|http://w3id.org/transmodel/organisations#servingPTFor|
+|serving_pt_for|VARCHAR(50)|CRTM|Esta propiedad indica para qué   Autoridad está trabajando la entidad operadora.|*[http://w3id.org/transmodel/organisations#servingPTFor](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=Punto%20c-,Sirve%20el%20Transporte%20P%C3%BAblico%20para,-op)*|
 |telephone|VARCHAR(200)|+34 91 406 88   10|Teléfono de   información y contacto con la entidad.|http://schema.org/telephone |
 |email|VARCHAR(200)|https://www.emtmadrid.es/AtencionAlCliente/Agradecimientos    |Correo   electrónico de información.|http://schema.org/email|
 |url|VARCHAR(400)|https://www.emtmadrid.es/Servicios/Contactar|Dirección   URL pública donde puedes obtener información de la entidad.|http://schema.org/url  |
@@ -146,13 +146,13 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 |     description       |     VARCHAR(4000)    |     Línea 138,   comienzo en Cristo Rey y final en San Ignacio de Loyola                   |     Una   descripción del recurso dentro de un contexto dado.                                                                                              |     http://purl.org/dc/terms/description                                     |
 |     title             |     VARCHAR(200)     |     Línea   138                                                                            |     Nombre   o título de la línea del autobús.                                                                                                             |     http://purl.org/dc/terms/title                                           |
 |     url               |     VARCHAR(400)     |     https://www.emtmadrid.es/Bloques-EMT/EMT-BUS/Mi-linea-(1).aspx?linea=138&lang=es-ES    |     Dirección   URL pública donde puedes obtener información de la entidad.                                                                                |     http://schema.org/url                                                    |
-|     short_name        |     VARCHAR(200)     |     138                                                                                    |     Nombre   corto para algo que lo necesite.                                                                                                              |     http://w3id.org/transmodel/commons#shortName                             |
+|     short_name        |     VARCHAR(200)     |     138                                                                                    |     Nombre   corto para algo que lo necesite.                                                                                                              |     *[http://w3id.org/transmodel/commons#shortName](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=string-,Nombre%20corto,-dp)*                             |
 |     cabecera_linea    |     VARCHAR(50)      |     4608                                                                                   |     Indica   cuál es la parada de cabecera de la línea.                                                                                                    |     http://vocab.ciudadesabiertas.es/def/transporte/autobus#cabeceraLinea    |
 |     final_linea       |     VARCHAR(50)      |     5481                                                                                   |     Indica   cuál es la parada de final de la línea.                                                                                                       |     http://vocab.ciudadesabiertas.es/def/transporte/autobus#finalLinea       |
-|     distancia         |     DOUBLE           |     58                                                                                     |     Distancia   total para una Línea o una Ruta o similares.                                                                                               |     http://w3id.org/transmodel/journeys#distance                             |
-|     operating         |     VARCHAR(50)      |     emt                                                                                    |     Esta   propiedad señala qué Líneas están operadas por qué Operador.                                                                                    |     http://w3id.org/transmodel/organisations#operating                       |
-|     colour            |     VARCHAR(200)     |     Azul                                                                                   |     Esta   propiedad permite describir el color de algo que va en Presentación de   información, como por ejemplo el color identificativo de una línea.    |     http://w3id.org/transmodel/commons#colour                                |
-|     text_colour       |     VARCHAR(200)     |     Negro                                                                                  |     El color que   se usa para representar el texto asociado con una Presentación, por ejemplo   de una línea.                                             |     http://w3id.org/transmodel/commons#textColour                            |
+|     distancia         |     DOUBLE           |     58                                                                                     |     Distancia   total para una Línea o una Ruta o similares.                                                                                               |     *[http://w3id.org/transmodel/journeys#distance](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=boolean-,Distancia,-dp)*                              |
+|     operating         |     VARCHAR(50)      |     emt                                                                                    |     Esta   propiedad señala qué Líneas están operadas por qué Operador.                                                                                    |     *[http://w3id.org/transmodel/organisations#operating](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=Tipo%20c-,operando,-op)*                       |
+|     colour            |     VARCHAR(200)     |     Azul                                                                                   |     Esta   propiedad permite describir el color de algo que va en Presentación de   información, como por ejemplo el color identificativo de una línea.    |     *[http://w3id.org/transmodel/commons#colour](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=integer-,color,-dp)*                                 |
+|     text_colour       |     VARCHAR(200)     |     Negro                                                                                  |     El color que   se usa para representar el texto asociado con una Presentación, por ejemplo   de una línea.                                             |     *[http://w3id.org/transmodel/commons#textColour](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=string-,color%20de%20texto,-dp)*                            |
 
 
 
@@ -179,8 +179,8 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 |     ikey              |     VARCHAR(50)      |     BUSROU01                                                                |     Identificador de la Tabla (PK).                                               |                                                          |
 |     id                |     VARCHAR(50)      |     138a                                                                    |                                                                                   |     http://purl.org/dc/terms/identifier                  |
 |     description       |     VARCHAR(4000)    |     Línea 138, comienzo en Cristo Rey y final en San Ignacio de   Loyola    |     Una descripción del recurso dentro de un contexto dado.                       |     http://purl.org/dc/terms/description                 |
-|     direction_type    |     VARCHAR(200)     |     outbound                                                                |     Esta propiedad permite   describir el tipo de dirección para una Ruta.        |     http://w3id.org/transmodel/journeys#directionType    |
-|     on                |     VARCHAR(50)      |     138                                                                     |     Esta propiedad conecta el patrón de viaje con la ruta en la que   trabaja.    |     http://w3id.org/transmodel/journeys#on               |
+|     direction_type    |     VARCHAR(200)     |     outbound                                                                |     Esta propiedad permite   describir el tipo de dirección para una Ruta.        |     *[http://w3id.org/transmodel/journeys#directionType](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=conceptos%20c-,tipo%20de%20direcci%C3%B3n,-ni)*     |
+|     on                |     VARCHAR(50)      |     138                                                                     |     Esta propiedad conecta el patrón de viaje con la ruta en la que   trabaja.    |      *[http://w3id.org/transmodel/journeys#on](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=postal%20c-,en,-op)*               |
 
 
 
@@ -211,23 +211,23 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 [comment]: <!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!> 
 
 &nbsp;
-### AUTOBUS_POINTONROUTE <a name="id11"></a>
+### AUTOBUS_POINTONROUTE <a name="id10"></a>
 &nbsp;
 
 |     Campo                      |     Tipo           |     Ejemplo        |     Descripción                                                                                                                                                                 |     URL                                                         |
 |--------------------------------|--------------------|--------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 |     ikey                       |     VARCHAR(50)    |     BUSPOIROU01    |     Identificador de la   Tabla (PK).                                                                                                                                           |                                                                 |
 |     id                         |     VARCHAR(50)    |     138b-4608      |                                                                                                                                                                                 |     http://purl.org/dc/terms/identifier                         |
-|     order                      |     INTEGER        |     1              |     Orden de un   Punto en una Secuencia de Enlaces (Link Sequence) y por tanto de un Punto en   una Ruta o en cualquier otra estructura similar.                               |     http://w3id.org/transmodel/journeys#order                   |
-|     distance_from_start        |     DOUBLE         |     0              |     Para   un Punto en una Secuencia de enlaces (o similares), esta propiedad representa   la distancia desde el comienzo del correspondiente Patrón de Viaje o   similares.    |     http://w3id.org/transmodel/journeys#distanceFromStart       |
+|     order                      |     INTEGER        |     1              |     Orden de un   Punto en una Secuencia de Enlaces (Link Sequence) y por tanto de un Punto en   una Ruta o en cualquier otra estructura similar.                               |      *[http://w3id.org/transmodel/journeys#order](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=string-,Orden,-dp)*                   |
+|     distance_from_start        |     DOUBLE         |     0              |     Para   un Punto en una Secuencia de enlaces (o similares), esta propiedad representa   la distancia desde el comienzo del correspondiente Patrón de Viaje o   similares.    |     *[http://w3id.org/transmodel/journeys#distanceFromStart](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=double-,Distancia%20desde%20el%20inicio,-dp)*       |
 |     in                         |     VARCHAR(50)    |     138a           |                                                                                                                                                                                 |                                                                 |
-|     functional_centroid_for    |     VARCHAR(50)    |     4608           |     Esta   propiedad permite la conexión de un Punto con una Zona.                                                                                                              |     http://w3id.org/transmodel/commons#functionalCentroidFor    |
+|     functional_centroid_for    |     VARCHAR(50)    |     4608           |     Esta   propiedad permite la conexión de un Punto con una Zona.                                                                                                              |     *[http://w3id.org/transmodel/commons#functionalCentroidFor](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=viaje%20c-,Un%20centroide%20funcional%20para,-op)*    |
 
 
 [comment]: <!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!> 
 
 &nbsp;
-### AUTOBUS_JOURNEYPATTERN <a name="id12"></a>
+### AUTOBUS_JOURNEYPATTERN <a name="id11"></a>
 &nbsp;
 
 |     Campo                      |     Tipo            |     Ejemplo                                 |     Descripción                                                                                                  |     URL                                                                              |
@@ -235,34 +235,34 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 |     ikey                       |     VARCHAR(50)     |     BUSJOUPAT01                             |     Identificador de la Tabla (PK).                                                                              |                                                                                      |
 |     id                         |     VARCHAR(50)     |     138a2                                   |                                                                                                                  |     http://purl.org/dc/terms/identifier                                              |
 |     title                      |     VARCHAR(200)    |     138a2                                   |     Nombre o título.                                                                                             |     http://purl.org/dc/terms/title                                                   |
-|     distance                   |     DOUBLE          |     11,194                                  |     Distancia total para una Línea o una Ruta o similares.                                                       |     http://w3id.org/transmodel/journeys#distance                                     |
-|     on                         |     VARCHAR(50)     |     138a                                    |     Esta propiedad conecta el patrón de viaje con la ruta en la que   trabaja.                                   |     http://w3id.org/transmodel/journeys#on                                           |
+|     distance                   |     DOUBLE          |     11,194                                  |     Distancia total para una Línea o una Ruta o similares.                                                       |     *[http://w3id.org/transmodel/journeys#distance](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=boolean-,Distancia,-dp)*                                      |
+|     on                         |     VARCHAR(50)     |     138a                                    |     Esta propiedad conecta el patrón de viaje con la ruta en la que   trabaja.                                   |      *[http://w3id.org/transmodel/journeys#on](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=postal%20c-,en,-op)*                                           |
 |     generado_por_incidencia    |     VARCHAR(50)     |     29059944-382A-49AA-A068-B55BF2FAC51F    |     Relación de un patrón de viaje de una ruta que se ha creado por   una incidencia.                            |     http://vocab.ciudadesabiertas.es/def/transporte/autobus#generadoPorIncidencia    |
-|     front_text                 |     VARCHAR(50)     |     San Ignacio de Loyola                   |     Texto que se muestra normalmente en la parte frontal de un   vehículo del servicio público de transporte.    |     http://w3id.org/transmodel/journeys#frontText                                    |
+|     front_text                 |     VARCHAR(50)     |     San Ignacio de Loyola                   |     Texto que se muestra normalmente en la parte frontal de un   vehículo del servicio público de transporte.    |     [http://w3id.org/transmodel/journeys#frontText]*(http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=string-,Letrero%20de%20Cabecera,-dp)*                                    |
 
 
 
 [comment]: <!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!> 
 
 &nbsp;
-### AUTOBUS_STOPPOINTINJOURNEYPATTERN <a name="id13"></a>
+### AUTOBUS_STOPPOINTINJOURNEYPATTERN <a name="id12"></a>
 &nbsp;
 
 |     Campo                      |     Tipo            |     Ejemplo         |     Descripción                                                                                                                                      |     URL                                                         |
 |--------------------------------|---------------------|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 |     ikey                       |     VARCHAR(50)     |     BUSSTOPOI01     |     Identificador de la   Tabla (PK).                                                                                                                |                                                                 |
 |     id                         |     VARCHAR(50)     |     138a1-4608      |                                                                                                                                                      |     http://purl.org/dc/terms/identifier                         |
-|     order                      |     INTEGER         |     1               |     Orden de un   Punto en una Secuencia de Enlaces (Link Sequence) y por tanto de un Punto en   una Ruta o en cualquier otra estructura similar.    |     http://w3id.org/transmodel/journeys#order                   |
-|     stop_use                   |     VARCHAR(200)    |     pass-through    |     Permite la   descripción del tipo de uso de una parada: acceso, intercambio, de paso, etc.                                                       |     http://w3id.org/transmodel/journeys#stopUse                 |
+|     order                      |     INTEGER         |     1               |     Orden de un   Punto en una Secuencia de Enlaces (Link Sequence) y por tanto de un Punto en   una Ruta o en cualquier otra estructura similar.    |      *[http://w3id.org/transmodel/journeys#order](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=string-,Orden,-dp)*                   |
+|     stop_use                   |     VARCHAR(200)    |     pass-through    |     Permite la   descripción del tipo de uso de una parada: acceso, intercambio, de paso, etc.                                                       |     *[http://w3id.org/transmodel/journeys#stopUse](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=Parada%20c-,funci%C3%B3n%20de%20la%20parada,-op)*|
 |     in                         |     VARCHAR(50)     |     138a2           |                                                                                                                                                      |                                                                 |
-|     functional_centroid_for    |     VARCHAR(50)     |     4608            |     Esta   propiedad permite la conexión de un Punto con una Zona.                                                                                   |     http://w3id.org/transmodel/commons#functionalCentroidFor    |
-|     alighting                  |     BIT(1)          |     1               |     Esta   propiedad indica si la parada se puede usar para bajarse o no.                                                                            |     http://w3id.org/transmodel/journeys#forAlighting            |
-|     boarding                   |     BIT(1)          |     0               |     Esta   propiedad indica si se puede montar en la parada.                                                                                         |     http://w3id.org/transmodel/journeys#forBoarding             |
-|     title_stop_area            |     VARCHAR(200)    |     Cristo Rey      |     Un grupo de   Paradas que están próximas entre sí.                                                                                               |     http://w3id.org/transmodel/journeys#StopArea                |
+|     functional_centroid_for    |     VARCHAR(50)     |     4608            |     Esta   propiedad permite la conexión de un Punto con una Zona.                                                                                   |     *[http://w3id.org/transmodel/commons#functionalCentroidFor](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=viaje%20c-,Un%20centroide%20funcional%20para,-op)*    |
+|     alighting                  |     BIT(1)          |     1               |     Esta   propiedad indica si la parada se puede usar para bajarse o no.                                                                            |     *[http://w3id.org/transmodel/journeys#forAlighting](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=boolean-,Para%20bajarse,-dp)*            |
+|     boarding                   |     BIT(1)          |     0               |     Esta   propiedad indica si se puede montar en la parada.                                                                                         |     *[http://w3id.org/transmodel/journeys#forBoarding](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=boolean-,para%20subirse,-dp)*             |
+|     title_stop_area            |     VARCHAR(200)    |     Cristo Rey      |     Un grupo de   Paradas que están próximas entre sí.                                                                                               |     *[http://w3id.org/transmodel/journeys#StopArea](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=dp-,Paradas,-c)*                |
 
 
 &nbsp;
-### AUTOBUS_PARADA <a name="id14"></a>
+### AUTOBUS_PARADA <a name="id13"></a>
 &nbsp;
 
 |     Campo                |     Tipo             |     Ejemplo                           |     Descripción                                                                                                                         |     URL                                                                                                         |
@@ -287,24 +287,24 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 
 
 &nbsp;
-### AUTOBUS_VEHICLEJOURNEY <a name="id15"></a>
+### AUTOBUS_VEHICLEJOURNEY <a name="id14"></a>
 &nbsp;
 
 |     Campo               |     Tipo           |     Ejemplo            |     Descripción                                                                                                                                  |     URL                                                    |
 |-------------------------|--------------------|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
 |     ikey                |     VARCHAR(50)    |     BUSVEHJOU01        |     Identificador de la Tabla (PK).                                                                                                              |                                                            |
 |     id                  |     VARCHAR(50)    |     110a1              |                                                                                                                                                  |     http://purl.org/dc/terms/identifier                    |
-|     journey_duration    |     VARCHAR(50)    |     P1D                |     Duración programada del viaje de un   vehículo.                                                                                              |     http://w3id.org/transmodel/journeys#journeyDuration    |
-|     departure_time      |     TIME           |     09:00:00+02:00     |     Hora de salida programada del viaje de   un vehículo.                                                                                        |     http://w3id.org/transmodel/journeys#departureTime      |
-|     made_using          |     VARCHAR(50)    |     138a2              |     Esta propiedad conecta algunas clases   con otras que hacen posible su funcionamiento.                                                       |     http://w3id.org/transmodel/journeys#madeUsing          |
-|     worked_on           |     VARCHAR(50)    |     laborable          |     Relación entre el Viaje de un Vehículo   y el Día Tipo.                                                                                      |     http://w3id.org/transmodel/journeys#workedOn           |
-|     composed_of         |     VARCHAR(50)    |     138a1-laborable    |     Un Viaje de Vehículo compuesto de   indicaciones de viaje en cabecera de línea donde se indican las salidas del   primero y último viaje.    |     http://w3id.org/transmodel/journeys#composedOf         |
-|     direction_type      |     VARCHAR(50)    |     outbound           |     Esta propiedad permite describir el   tipo de dirección para una Ruta.                                                                       |     http://w3id.org/transmodel/journeys#directionType      |
+|     journey_duration    |     VARCHAR(50)    |     P1D                |     Duración programada del viaje de un   vehículo.                                                                                              |     *[http://w3id.org/transmodel/journeys#journeyDuration](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=double-,Duraci%C3%B3n%20del%20viaje,-dp)*    |
+|     departure_time      |     TIME           |     09:00:00+02:00     |     Hora de salida programada del viaje de   un vehículo.                                                                                        |     *[http://w3id.org/transmodel/journeys#departureTime](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=date-,Hora%20de%20salida,-dp)*      |
+|     made_using          |     VARCHAR(50)    |     138a2              |     Esta propiedad conecta algunas clases   con otras que hacen posible su funcionamiento.                                                       |     *[http://w3id.org/transmodel/journeys#madeUsing](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=horario%20c-,se%20hace%20con,-op)*          |
+|     worked_on           |     VARCHAR(50)    |     laborable          |     Relación entre el Viaje de un Vehículo   y el Día Tipo.                                                                                      |     *[http://w3id.org/transmodel/journeys#workedOn](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=trafico%20c-,Opera%20en,-op)*           |
+|     composed_of         |     VARCHAR(50)    |     138a1-laborable    |     Un Viaje de Vehículo compuesto de   indicaciones de viaje en cabecera de línea donde se indican las salidas del   primero y último viaje.    |     *[http://w3id.org/transmodel/journeys#composedOf](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=trafico%20c-,Se%20compone%20de,-op)*         |
+|     direction_type      |     VARCHAR(50)    |     outbound           |     Esta propiedad permite describir el   tipo de dirección para una Ruta.                                                                       |     *[http://w3id.org/transmodel/journeys#directionType](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=conceptos%20c-,tipo%20de%20direcci%C3%B3n,-ni)*       |
 
 
 
 &nbsp;
-### AUTOBUS_REALTIMEPASSINGTIME <a name="id16"></a>
+### AUTOBUS_REALTIMEPASSINGTIME <a name="id15"></a>
 &nbsp;
 
 |     Campo                      |     Tipo           |     Ejemplo                |     Descripción                                                                                             |     URL                                                                            |
@@ -318,38 +318,38 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 
 
 &nbsp;
-### AUTOBUS_HEADWAYJOURNEYGROUP <a name="id17"></a>
+### AUTOBUS_HEADWAYJOURNEYGROUP <a name="id16"></a>
 &nbsp;
 
 |     Campo                   |     Tipo           |     Ejemplo            |     Descripción                                                                            |     URL                                                       |
 |-----------------------------|--------------------|------------------------|--------------------------------------------------------------------------------------------|---------------------------------------------------------------|
 |     ikey                    |     VARCHAR(50)    |     BUSHEAJOU01        |     Identificador de la Tabla (PK).                                                        |                                                               |
 |     id                      |     VARCHAR(50)    |     138a1-laborable    |                                                                                            |     http://purl.org/dc/terms/identifier                       |
-|     first_departure_time    |     TIME           |     06:15:00+02:00     |     La hora de inicio de un Viaje de un   Vehículo.                                        |     http://w3id.org/transmodel/journeys#firstDepartureTime    |
-|     last_departure_time     |     TIME           |     23:30:00+02:00     |     La hora de fin de un Viaje de un   Vehículo.                                           |     http://w3id.org/transmodel/journeys#lastDepartureTime     |
-|     determined_by           |     VARCHAR(50)    |     138-laborable      |     Un grupo de viajes de cabecera de línea   con un intervalo desde cabecera de línea.    |     http://w3id.org/transmodel/journeys#determinedBy          |
+|     first_departure_time    |     TIME           |     06:15:00+02:00     |     La hora de inicio de un Viaje de un   Vehículo.                                        |     *[http://w3id.org/transmodel/journeys#firstDepartureTime](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=boolean-,Primera%20hora%20de%20salida,-dp)*    |
+|     last_departure_time     |     TIME           |     23:30:00+02:00     |     La hora de fin de un Viaje de un   Vehículo.                                           |     *[http://w3id.org/transmodel/journeys#lastDepartureTime](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=string-,%C3%BAltima%20hora%20de%20salida,-dp)*     |
+|     determined_by           |     VARCHAR(50)    |     138-laborable      |     Un grupo de viajes de cabecera de línea   con un intervalo desde cabecera de línea.    |     *[http://w3id.org/transmodel/journeys#determinedBy](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=Tipo%20c-,determinado%20por,-op)*          |
 
 
 
 
 &nbsp;
-### AUTOBUS_HEADWAYINTERVAL <a name="id18"></a>
+### AUTOBUS_HEADWAYINTERVAL <a name="id17"></a>
 &nbsp;
 
 |     Campo                         |     Tipo            |     Ejemplo             |     Descripción                                             |     URL                                                             |
 |-----------------------------------|---------------------|-------------------------|-------------------------------------------------------------|---------------------------------------------------------------------|
 |     ikey                          |     VARCHAR(50)     |     BUSHEAINT01         |     Identificador de la Tabla (PK).                         |                                                                     |
 |     id                            |     VARCHAR(50)     |     138-laborable       |                                                             |     http://purl.org/dc/terms/identifier                             |
-|     minimum_headway_interval      |     VARCHAR(50)     |     P7M                 |     Mínimo intervalo/frecuencia fijada   desde cabecera.    |     http://w3id.org/transmodel/journeys#minimumHeadwayInterval      |
-|     maximum_headway_interval      |     VARCHAR(50)     |     P20M                |     Máximo intervalo/frecuencia fijada   desde cabecera.    |     http://w3id.org/transmodel/journeys#maximumHeadwayInterval      |
-|     scheduled_headway_interval    |     VARCHAR(200)    |     Cada 7 - 20 min.    |     Intervalo/frecuencia   programada desde cabecera.       |     http://w3id.org/transmodel/journeys#scheduledHeadwayInterval    |
+|     minimum_headway_interval      |     VARCHAR(50)     |     P7M                 |     Mínimo intervalo/frecuencia fijada   desde cabecera.    |     *[http://w3id.org/transmodel/journeys#minimumHeadwayInterval](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=time-,Frecuencia%20m%C3%ADnima,-dp)*      |
+|     maximum_headway_interval      |     VARCHAR(50)     |     P20M                |     Máximo intervalo/frecuencia fijada   desde cabecera.    |     *[http://w3id.org/transmodel/journeys#maximumHeadwayInterval](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=time-,Frecuencia%20m%C3%A1xima,-dp)*      |
+|     scheduled_headway_interval    |     VARCHAR(200)    |     Cada 7 - 20 min.    |     Intervalo/frecuencia   programada desde cabecera.       |     *[http://w3id.org/transmodel/journeys#scheduledHeadwayInterval](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=time-,Frecuencia%20programada,-dp)*    |
 
 
 
 
 
 &nbsp;
-### AUTOBUS_SERVICECALENDAR <a name="id19"></a>
+### AUTOBUS_SERVICECALENDAR <a name="id18"></a>
 &nbsp;
 
 |     Campo          |     Tipo             |     Ejemplo                                                |     Descripción                                                                   |     URL                                             |
@@ -358,9 +358,9 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 |     id             |     VARCHAR(50)      |     2020                                                   |                                                                                   |     http://purl.org/dc/terms/identifier             |
 |     title          |     VARCHAR(200)     |     Calendario de servicio de la EMT Madrid   para 2020    |     Nombre o título del calendario.                                               |     http://purl.org/dc/terms/title                  |
 |     description    |     VARCHAR(4000)    |     Calendario de servicio de la EMT Madrid   para 2020    |     Una   descripción del recurso dentro de un contexto dado.                     |     http://purl.org/dc/terms/description            |
-|     short_name     |     VARCHAR(200)     |     Calendario Servicio EMT Madrid 2020                    |     Nombre corto para algo que lo necesite.                                       |     http://w3id.org/transmodel/commons#shortName    |
-|     from           |     DATETIME         |     2020-01-01                                             |     Esta propiedad permite describir el   inicio de un calendario de servicio.    |     http://w3id.org/transmodel/journeys#from        |
-|     to             |     DATETIME         |     2020-12-31                                             |     Esta propiedad permite describir el fin   de un calendario de servicio.       |     http://w3id.org/transmodel/journeys#to          |
+|     short_name     |     VARCHAR(200)     |     Calendario Servicio EMT Madrid 2020                    |     Nombre corto para algo que lo necesite.                                       |     *[http://w3id.org/transmodel/commons#shortName](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=string-,Nombre%20corto,-dp)*    |
+|     from           |     DATETIME         |     2020-01-01                                             |     Esta propiedad permite describir el   inicio de un calendario de servicio.    |     *[http://w3id.org/transmodel/journeys#from](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=string-,desde,-dp)*        |
+|     to             |     DATETIME         |     2020-12-31                                             |     Esta propiedad permite describir el fin   de un calendario de servicio.       |     *[http://w3id.org/transmodel/journeys#to](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=time-,hasta,-dp)*          |
 
 
 
@@ -368,7 +368,7 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 
 
 &nbsp;
-### AUTOBUS_DAYTYPEASSIGNMENT <a name="id20"></a>
+### AUTOBUS_DAYTYPEASSIGNMENT <a name="id19"></a>
 &nbsp;
 
 
@@ -376,16 +376,16 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 |------------------------------|--------------------|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
 |     ikey                     |     VARCHAR(50)    |     BUSDAYASS01                 |     Identificador de la Tabla (PK).                                                                                                             |                                                        |
 |     id                       |     VARCHAR(50)    |     20200102-CAL01-laborable    |                                                                                                                                                 |     http://purl.org/dc/terms/identifier                |
-|     date                     |     DATETIME       |     2020-01-02                  |     Fecha de una Asignación de Día Tipo.                                                                                                        |     http://w3id.org/transmodel/journeys#date           |
-|     is_available             |     BIT(1)         |     1                           |     Propiedad que determina si una   Asignación de Día Tipo está disponible o no.                                                               |     http://w3id.org/transmodel/journeys#isAvailable    |
-|     specifying               |     VARCHAR(50)    |     laborable                   |     La   asignación de características operativas expresadas en Día Tipo a un Día   Operativo particular dentro de un Calendario de Servicio    |     http://w3id.org/transmodel/journeys#specifying     |
-|     for_the_definition_of    |     VARCHAR(50)    |     2020                        |     Establece la relación entre un   Calendario de Servicio y la Asignación de Día Tipo.                                                        |     http://w3id.org/transmodel/journeys#definedBy      |
+|     date                     |     DATETIME       |     2020-01-02                  |     Fecha de una Asignación de Día Tipo.                                                                                                        |     *[http://w3id.org/transmodel/journeys#date](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=time-,Fecha,-dp)*           |
+|     is_available             |     BIT(1)         |     1                           |     Propiedad que determina si una   Asignación de Día Tipo está disponible o no.                                                               |     *[http://w3id.org/transmodel/journeys#isAvailable](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=date-,Disponibilidad,-dp)*    |
+|     specifying               |     VARCHAR(50)    |     laborable                   |     La   asignación de características operativas expresadas en Día Tipo a un Día   Operativo particular dentro de un Calendario de Servicio    |     *[http://w3id.org/transmodel/journeys#specifying](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=conceptos%20c-,especifica,-op)*     |
+|     for_the_definition_of    |     VARCHAR(50)    |     2020                        |     Establece la relación entre un   Calendario de Servicio y la Asignación de Día Tipo.                                                        |     *[http://w3id.org/transmodel/journeys#definedBy](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=property-,definici%C3%B3n%20por,-op)*      |
 
 
 
 
 &nbsp;
-### AUTOBUS_DAYTYPE <a name="id21"></a>
+### AUTOBUS_DAYTYPE <a name="id20"></a>
 &nbsp;
 
 
@@ -395,8 +395,8 @@ En principio se considera esta estructura de datos bastante estable y no se esti
 |     id               |     VARCHAR(50)      |     laborable                                                      |                                                                              |     http://purl.org/dc/terms/identifier                 |
 |     title            |     VARCHAR(200)     |     Día laborable                                                  |     Nombre o título del tipo de día.                                         |     http://purl.org/dc/terms/title                      |
 |     description      |     VARCHAR(4000)    |     Horario general para el servicio de EMT   en día laborable.    |     Una   descripción del recurso dentro de un contexto dado.                |     http://purl.org/dc/terms/description                |
-|     short_name       |     VARCHAR(200)     |     Laborables                                                     |     Nombre corto para algo que lo necesite.                                  |     http://w3id.org/transmodel/commons#shortName        |
-|     earliest_time    |     TIME             |     5:30:00                                                        |     Hora más temprana para el inicio de un   servicio un cierto día tipo.    |     http://w3id.org/transmodel/journeys#earliestTime    |
+|     short_name       |     VARCHAR(200)     |     Laborables                                                     |     Nombre corto para algo que lo necesite.                                  |     *[http://w3id.org/transmodel/commons#shortName](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=string-,Nombre%20corto,-dp)*        |
+|     earliest_time    |     TIME             |     5:30:00                                                        |     Hora más temprana para el inicio de un   servicio un cierto día tipo.    |     *[http://w3id.org/transmodel/journeys#earliestTime](http://vocab.ciudadesabiertas.es/def/transporte/autobus/index-es.html#:~:text=time-,Hora%20m%C3%A1s%20temprana,-dp)*    |
 
 
 
