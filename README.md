@@ -15,6 +15,9 @@ De los sistemas de transporte público de autobuses nos centraremos en la inform
 
 Contar con los datos del transporte de personas que se produce en las ciudades es un elemento muy valioso para ayuntamientos, ciudadanía y terceras partes, ya sea para la gestión de los servicios, la utilización de los servicios o la prestación de servicios de terceros en diferentes ámbitos como la gestión del tráfico, el diseño de la infraestructura viaria, el cumplimiento de los Objetivos de Desarrollo Sostenible, la calidad del aire, la movilidad urbana, MaaS o cualquier otro ámbito relacionado.
 
+También se ha propuesto un modelo relacional tipo, que está  documentado *[aquí](/relational model/)*, que ha sido utilizado para la generación de  una API REST relacionada con este vocabulario, en el contexto del  proyecto Ciudades Abiertas. Este modelo relacional no está  completamente normalizado, para facilitar algunos procesos de  Extracción, Transformación y Carga (ETLs, por sus siglas en inglés),  habituales en muchos portales de datos abiertos, y no es normativo,  por lo que cualquier organización que adopte este vocabulario para la  publicación de sus datos abiertos puede proponer variaciones siempre  que se respete la forma de exportación a RDF de los datos  correspondientes
+
+
 ## Desarrollo del vocabulario
 
 El material generado en las diferentes actividades ejecutadas durante el desarrollo del vocabulario, casos de uso, historias de usuario, glosario de términos, etc., se encuentra disponible en la [Wiki del Vocabulario](https://github.com/CiudadesAbiertas/vocab-transporte-autobus/wiki)
