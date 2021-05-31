@@ -43,6 +43,7 @@
 
 &nbsp;
 
+
 ## LINKS <a name="id2"></a>
 
 
@@ -92,7 +93,7 @@ Figura 4
 
 
 ## TABLAS <a name="id4"></a>
-En principio se considera esta estructura de datos bastante estable y no se estima que sufrirá cambios. Pero puesto que la actuación D2, que es donde se enmarca la definición de estas tablas, aún está en desarrollo, no se puede asegurar al 100% que será la definitiva.     
+   
 
 [comment]: <!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!> 
 &nbsp;
