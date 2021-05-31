@@ -5,7 +5,7 @@
 # DESARROLLO API REST DE DATOS REUTILIZABLE. MODELO DE TABLAS: AUTOBÚS
 
 &nbsp;
-También se ha propuesto un modelo relacional tipo, que está  documentado *[aquí](relationalmodel/README.md)*, que ha sido utilizado para la generación de  una API REST relacionada con este vocabulario, en el contexto del  proyecto Ciudades Abiertas. Este modelo relacional no está  completamente normalizado, para facilitar algunos procesos de  Extracción, Transformación y Carga (ETLs, por sus siglas en inglés),  habituales en muchos portales de datos abiertos, y no es normativo,  por lo que cualquier organización que adopte este vocabulario para la  publicación de sus datos abiertos puede proponer variaciones siempre  que se respete la forma de exportación a RDF de los datos  correspondientes.
+También se ha propuesto un modelo relacional tipo, que está  documentado *[aquí](relational_model/README.md)*, que ha sido utilizado para la generación de  una API REST relacionada con este vocabulario, en el contexto del  proyecto Ciudades Abiertas. Este modelo relacional no está  completamente normalizado, para facilitar algunos procesos de  Extracción, Transformación y Carga (ETLs, por sus siglas en inglés),  habituales en muchos portales de datos abiertos, y no es normativo,  por lo que cualquier organización que adopte este vocabulario para la  publicación de sus datos abiertos puede proponer variaciones siempre  que se respete la forma de exportación a RDF de los datos  correspondientes.
 
 
 ## **ÍNDICE**   
